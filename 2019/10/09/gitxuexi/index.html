@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>git的学习过程 - 萧寒</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="
+
+懵！git是什莫，还要学的吗？一开始要学git是，，，，有点蒙的，完全不知道从哪里开始学，然后就百度git，，，，emmmm，版本控制系统，分布式，嗯，就这样？为linux开发的软件？那我还要换,"> 
+    <meta name="author" content="萧寒"> 
+    <link rel="alternative" href="atom.xml" title="萧寒" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 4.1.1"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">萧寒</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="https://xiaohanxh.github.io"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">git的学习过程</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">git的学习过程</h1>
+        <div class="stuff">
+            <span>十月 09, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <img id="imgzoom_zoom" w="500" h="210" src="http://intwk.com/web/IPmster/" width="500" height="210">
+
+<h3 id="懵！"><a href="#懵！" class="headerlink" title="懵！"></a>懵！</h3><h4 id="git是什莫，还要学的吗？"><a href="#git是什莫，还要学的吗？" class="headerlink" title="git是什莫，还要学的吗？"></a>git是什莫，还要学的吗？</h4><p>一开始要学git是，，，，有点蒙的，完全不知道从哪里开始学，然后就百度git，，，，<br>emmmm，版本控制系统，分布式，嗯，就这样？<br>为linux开发的软件？那我还要换系统？还是虚拟机！？开放源码？对了，学长跟我说过github是最大的开源网站！<br>分布式相比于集中式的最大区别在于开发者可以提交到本地，每个开发者通过克隆（git clone），在本地机器上拷贝一个完整的Git仓库。<br>马马虎虎懂一点了，慕课网搜一下！没有。？！！？？纳尼？居然没有？<br>那好吧，只好搬出万能的b站了，果然，b站上教学资源一大把！开心！<br><img src="1.png" alt=""><br><img src="2.jpg" alt=""><br>马马虎虎看一眼，挺简单的！就是几个人一起修改一个文件嘛！<br>然后就是B站努力的刷视频了！没多少努力与难度，顺便为了记住指令，还特意做了下笔记（常用）<br><img src="3.jpg" alt=""><br><img src="4.jpg" alt=""><br><img src="5.jpg" alt=""><br><img src="6.jpg" alt=""><br>接下来就简单介绍下git的配置和简单使用！</p>
+<h3 id="一-本地配置："><a href="#一-本地配置：" class="headerlink" title="一.本地配置："></a>一.本地配置：</h3><h5 id="1-安装："><a href="#1-安装：" class="headerlink" title="1.安装："></a>1.安装：</h5><p>安装就请百度咯，你以为我会给你说：<br>点击[git]（<a href="https://git-scm.com/）下载git安装包，下载完成后双击安装包，然后next，选一个盘符（安装应用最好不要在系统盘），install，然后点击完成！？？？" target="_blank" rel="noopener">https://git-scm.com/）下载git安装包，下载完成后双击安装包，然后next，选一个盘符（安装应用最好不要在系统盘），install，然后点击完成！？？？</a></p>
+<h6 id="放心吧，我才不会这样告诉你！哼-￢︿̫̿￢☆"><a href="#放心吧，我才不会这样告诉你！哼-￢︿̫̿￢☆" class="headerlink" title="放心吧，我才不会这样告诉你！哼(￢︿̫̿￢☆)"></a>放心吧，我才不会这样告诉你！哼(￢︿̫̿￢☆)</h6><p>安装完git后在任意位置会出现如图两个选项！</p>
+<h6 id="（别杠我，我说任意位置是在文件夹目录，你要跟我说在qq界面右击咋出不来？来来来，谁问的？我给你加个红buff？？）"><a href="#（别杠我，我说任意位置是在文件夹目录，你要跟我说在qq界面右击咋出不来？来来来，谁问的？我给你加个红buff？？）" class="headerlink" title="（别杠我，我说任意位置是在文件夹目录，你要跟我说在qq界面右击咋出不来？来来来，谁问的？我给你加个红buff？？）"></a>（别杠我，我说任意位置是在文件夹目录，你要跟我说在qq界面右击咋出不来？来来来，谁问的？我给你加个红buff？？）</h6><p>同时可以在命令指示符里输入npm -v查看版本号！（别问我怎么打开命令指示符，我会把win＋r然后输入cmd回车就可以打开这种方法交给你嘛？别想！不可能！什么，你问我win是哪个键，别动，就是你左手边那个四个小方块那个！）</p>
+<h5 id="2-配置git库："><a href="#2-配置git库：" class="headerlink" title="2.配置git库："></a>2.配置git库：</h5><p>打开文件夹，用命令或者直接右击创建一个文件夹（最好是在系统盘以外的盘），命名随你都随你！你说了算！<br>在文件夹内右击，点击git bash here（别纠结大小写，谢谢！）</p>
+<h6 id="本文指令没说的在前面我记得东西都有出现，别说看不见，看不清就去百度！我字丑怎么了！你来教我写字-啊！-￢︿̫̿￢☆"><a href="#本文指令没说的在前面我记得东西都有出现，别说看不见，看不清就去百度！我字丑怎么了！你来教我写字-啊！-￢︿̫̿￢☆" class="headerlink" title="(本文指令没说的在前面我记得东西都有出现，别说看不见，看不清就去百度！我字丑怎么了！你来教我写字 啊！(￢︿̫̿￢☆))"></a>(本文指令没说的在前面我记得东西都有出现，别说看不见，看不清就去百度！我字丑怎么了！你来教我写字 啊！(￢︿̫̿￢☆))</h6><p>然后会出现<br><img src="7.png" alt=""><br>这样一个窗口！别问！什么都别问，问了我也不会说，安安静静看下去！<br>首先我们创建一个本地的git仓库!<br><img src="8.png" alt=""><br>这样就成功了，我们的新建文件目录下就会自动生成一个.git的隐藏文件夹</p>
+<h6 id="（别问我为啥你看不见，都说是隐藏的了，让你看见还能叫隐藏文件夹吗？）"><a href="#（别问我为啥你看不见，都说是隐藏的了，让你看见还能叫隐藏文件夹吗？）" class="headerlink" title="（别问我为啥你看不见，都说是隐藏的了，让你看见还能叫隐藏文件夹吗？）"></a>（别问我为啥你看不见，都说是隐藏的了，让你看见还能叫隐藏文件夹吗？）</h6><h6 id="（也别问我你为啥能看见，我会告诉你因为你打开了查看里面的隐藏文件选项吗？没门！）"><a href="#（也别问我你为啥能看见，我会告诉你因为你打开了查看里面的隐藏文件选项吗？没门！）" class="headerlink" title="（也别问我你为啥能看见，我会告诉你因为你打开了查看里面的隐藏文件选项吗？没门！）"></a>（也别问我你为啥能看见，我会告诉你因为你打开了查看里面的隐藏文件选项吗？没门！）</h6><p>没事的时候别乱动.git里面的文件！<br>然后配置自己的本地用户名和邮箱！<br>然后按照需求用代码就好了，我实在懒得写了，啊啊啊啊，工作流程给你们放下面！<br><img src="9.jpg" alt=""><br><img src="10.jpg" alt=""><br>自己理解吧！</p>
+<h1 id="纯原创！转载请注明出处！"><a href="#纯原创！转载请注明出处！" class="headerlink" title="纯原创！转载请注明出处！"></a>纯原创！转载请注明出处！</h1>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>

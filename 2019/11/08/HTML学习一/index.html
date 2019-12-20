@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HTML学习及标签：一 - 萧寒</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="最近接触了前端开发，选择了web这条不归路。仅以此博客记录下我的不归旅程！首先接触的肯定是HTML了，所以在这里我也是从HTML开始说起！What is HTML?HTML 是用来描述网页的一种语言,"> 
+    <meta name="author" content="萧寒"> 
+    <link rel="alternative" href="atom.xml" title="萧寒" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 4.1.1"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">萧寒</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="https://xiaohanxh.github.io"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">HTML学习及标签：一</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">HTML学习及标签：一</h1>
+        <div class="stuff">
+            <span>十一月 08, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h2 id="最近接触了前端开发，选择了web这条不归路。仅以此博客记录下我的不归旅程！"><a href="#最近接触了前端开发，选择了web这条不归路。仅以此博客记录下我的不归旅程！" class="headerlink" title="最近接触了前端开发，选择了web这条不归路。仅以此博客记录下我的不归旅程！"></a>最近接触了前端开发，选择了web这条不归路。仅以此博客记录下我的不归旅程！</h2><h3 id="首先接触的肯定是HTML了，所以在这里我也是从HTML开始说起！"><a href="#首先接触的肯定是HTML了，所以在这里我也是从HTML开始说起！" class="headerlink" title="首先接触的肯定是HTML了，所以在这里我也是从HTML开始说起！"></a>首先接触的肯定是HTML了，所以在这里我也是从HTML开始说起！</h3><h4 id="What-is-HTML"><a href="#What-is-HTML" class="headerlink" title="What is HTML?"></a>What is HTML?</h4><p>HTML 是用来描述网页的一种语言。</p>
+<ol>
+<li>HTML 指的是超文本标记语言 (Hyper Text Markup Language)</li>
+<li>HTML 不是一种编程语言，而是一种标记语言 (markup language)</li>
+<li>标记语言是一套标记标签 (markup tag)</li>
+<li>HTML 使用标记标签来描述网页</li>
+</ol>
+我们目前所看到网页就是HTML编写的，但是严格来说HTML并不属于一门编程语言，js才算！
+web浏览器的作用就是读取HTML文档，并用网页显示。但是浏览器并不会将所有内容（例如标签）都显示出来，而是使用标签来解释页面的内容 。例如：
+<blockquote>
+&lsaquo;html&rsaquo;
+&lsaquo;body&rsaquo;
+
+<p>&lsaquo;h1&rsaquo;我的第一个标题&lsaquo;/h1&rsaquo;</p>
+<p>&lsaquo;p&rsaquo;我的第一个段落。&lsaquo;/p&rsaquo;</p>
+<p>&lsaquo;/body&rsaquo;<br>&lsaquo;/html&rsaquo;</blockquote><br><strong>例子解释</strong></p>
+<ul>
+<li>&lsaquo;html&rsaquo; 与 &lsaquo;/html&rsaquo; 之间的文本描述网页</li>
+<li>&lsaquo;body&rsaquo; 与 &lsaquo;/body&rsaquo; 之间的文本是可见的页面内容</li>
+<li>&lsaquo;h1&rsaquo; 与 &lsaquo;/h1&rsaquo; 之间的文本被显示为标题</li>
+<li>&lsaquo;p&rsaquo; 与 &lsaquo;/p&rsaquo; 之间的文本被显示为段落</li>
+<ul>
+<h4>用什么写HTML文档？</h4>
+写HTML对大佬来说并不需要什么软件，只需要文本文档就可以，写完改下后缀名为&ldquo;.html&rdquo;就完成，显然我们这些垃圾是做不到的，因为文本文档先不说没有任何语法提示，单就是不会提示任何错误就把我弄得头疼了！所以还是使用一些软件来写比较好！我自己使用的是vs code，当然，你也可以在网站上找到其他写HTML的软件，比较多，就不在此一一列举了！
+文本文档举例：
+
+<p><img src="HTML%E5%AD%A6%E4%B9%A0%E4%B8%80/1.gif" alt=""></p>
+<p><img src="HTML%E5%AD%A6%E4%B9%A0%E4%B8%80/2.gif" alt=""></p>
+<h4>知道了用什么写，接下来学格式吧！</h4>
+如果你是用vs code的话，在HTML文档中输入！就可以回车获得HTML大礼包一份！vs code会自动帮你写好头部和身体，接下来你自己添加内容就好了！
+如果需要自己输入的话，就
+&lsaquo;！DOCTYPE HTML&rsaquo;
+&lsaquo;html&rsaquo;
+&lsaquo;body&rsaquo;
+&lsaquo;h1&rsaquo;大标题！&lsaquo;/h1&rsaquo;
+&lsaquo;p&rsaquo;段落内容&lsaquo;/p&rsaquo;
+&lsaquo;/body&rsaquo;
+&lsaquo;/html&rsaquo;
+这就是一个HTML文档基本的格式，在body内随意添加自己想写的内容吧！
+<h3>关于标签</h3>
+<strong>HTML 标题</strong>
+HTML 标题（Heading）是通过 &lsaquo;h1&rsaquo; - &lsaquo;h6&rsaquo; 等标签进行定义的。
+<h1>这是h1标题</h1>
+<h2>这是h2标题</h2>
+<h3>这是h3标题</h3>
+......
+<strong>HTML 段落</strong>
+HTML 段落是通过 &ldquo;p&rdquo; 标签进行定义的。
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<p><img src="HTML%E5%AD%A6%E4%B9%A0%E4%B8%80/3.png" alt=""><br><strong>HTML 链接</strong></p>
+<p>HTML 链接是通过 &ldquo;a&rdquo; 标签进行定义的。<br>例如<br>&lsaquo;a href=&ldquo;<a href="https://xiaohanxh.github.io/">https://xiaohanxh.github.io/</a>&ldquo;&rsaquo; This is a link&lsaquo;/a&rsaquo;<br><a href="https://xiaohanxh.github.io/">This is a link</a><br>在 href 属性中指定链接的地址。<br><strong>HTML 图像</strong><br>HTML 图像是通过 <img> 标签进行定义的。<br>例如&lsaquo;img src=&ldquo;fwxiaohan&ldquo;/&gt;<br><strong>HTML 元素</strong><br>HTML 元素指的是从开始标签（start tag）到结束标签（end tag）的所有代码。<br>HTML 元素语法</p>
+<ol>
+<li>HTML 元素以开始标签起始</li>
+<li>HTML 元素以结束标签终止</li>
+<li>元素的内容是开始标签与结束标签之间的内容</li>
+<li>某些 HTML 元素具有空内容（empty content）</li>
+<li>空元素在开始标签中进行关闭（以开始标签的结束而结束）</li>
+<li>大多数 HTML 元素可拥有属性</li>
+<ol>
+HTML 标签对大小写不敏感：&lsaquo;P&rsaquo; 等同于 &lsaquo;p&rsaquo;。许多网站都使用大写的 HTML 标签。
+<h4>HTML 属性</h4>
+HTML 标签可以拥有属性。属性提供了有关 HTML 元素的更多的信息。
+
+<p>属性总是以名称/值对的形式出现，比如：name=”value”。</p>
+<p>属性总是在 HTML 元素的开始标签中规定。</p>
+<div >
+<div >
+<p>HTML 属性赋予元素意义和语境。</p>
+
+<p>下面的全局属性可用于任何 HTML 元素。</p>
+</div>
+
+
+<div>
+<h2>HTML 全局属性</h2>
+
+<table >
+<tr>
+<th style="width:35%;">属性</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td><a  title="HTML accesskey 属性">accesskey</a></td>
+<td>规定激活元素的快捷键。</td>
+</tr>
+
+<tr>
+<td><a  title="HTML class 属性">class</a></td>
+<td>规定元素的一个或多个类名（引用样式表中的类）。</td>
+</tr>
+
+<tr>
+<td ><a  title="HTML contenteditable 属性">contenteditable</a></td>
+<td>规定元素内容是否可编辑。</td>
+</tr>
+
+<tr>
+<td ><a  title="HTML contextmenu 属性">contextmenu</a></td>
+<td>规定元素的上下文菜单。上下文菜单在用户点击元素时显示。</td>
+</tr>
+
+<tr>
+<td ><a title="HTML data-* 属性">data-*</a></td>
+<td>用于存储页面或应用程序的私有定制数据。</td>
+</tr>
+
+<tr>
+<td><a title="HTML dir 属性">dir</a></td>
+<td>规定元素中内容的文本方向。</td>
+</tr>
+
+<tr>
+<td ><a title="HTML draggable 属性">draggable</a></td>
+<td>规定元素是否可拖动。</td>
+</tr>
+
+<tr>
+<td ><a  title="HTML dropzone 属性">dropzone</a></td>
+<td>规定在拖动被拖动数据时是否进行复制、移动或链接。</td>
+</tr>
+
+<tr>
+<td ><a  title="HTML hidden 属性">hidden</a></td>
+<td>规定元素仍未或不再相关。</td>
+</tr>
+
+<tr>
+<td><a  title="HTML id 属性">id</a></td>
+<td>规定元素的唯一 id。</td>
+</tr>
+
+<tr>
+<td><a  title="HTML lang 属性">lang</a></td>
+<td>规定元素内容的语言。</td>
+</tr>
+
+<tr>
+<td ><a  title="HTML spellcheck 属性">spellcheck</a></td>
+<td>规定是否对元素进行拼写和语法检查。</td>
+</tr>
+
+<tr>
+<td><a  title="HTML style 属性">style</a></td>
+<td>规定元素的行内 CSS 样式。</td>
+</tr>
+
+<tr>
+<td><a title="HTML tabindex 属性">tabindex</a></td>
+<td>规定元素的 tab 键次序。</td>
+</tr>
+
+<tr>
+<td><a  title="HTML title 属性">title</a></td>
+<td>规定有关元素的额外信息。</td>
+</tr>
+
+<tr>
+<td ><a  title="HTML translate 属性">translate</a></td>
+<td>规定是否应该翻译元素内容。</td>
+</tr>
+</table>
+</div>
+<h4>最后说一下关于标签的内容。</h4>
+块级元素：块级大多为结构性标记
+
+<p>  &lsaquo;address&rsaquo;…&lsaquo;/adderss&rsaquo; </p>
+<p>  &lsaquo;center&rsaquo;…&lsaquo;/center&rsaquo;  地址文字</p>
+<p>  &lt;h1&rsaquo;…&lt;/h1&rsaquo;  标题一级</p>
+<p>  &lt;h2&rsaquo;…&lt;/h2&rsaquo;  标题二级</p>
+<p>  &lt;h3&rsaquo;…&lt;/h3&rsaquo;  标题三级</p>
+<p>  &lt;h4&rsaquo;…&lt;/h4&rsaquo;  标题四级</p>
+<p>  &lt;h5&rsaquo;…&lt;/h5&rsaquo;  标题五级</p>
+<p>  &lt;h6&rsaquo;…&lt;/h6&rsaquo;  标题六级</p>
+<p>  &lt;hr&rsaquo;  水平分割线</p>
+<p>  &lt;p&rsaquo;…&lt;/p&rsaquo;  段落</p>
+<p>  &lt;pre&rsaquo;…&lt;/pre&rsaquo;  预格式化</p>
+<p>  &lt;blockquote&rsaquo;…&lt;/blockquote&rsaquo;  段落缩进   前后5个字符</p>
+<p>  &lt;marquee&rsaquo;…&lt;/marquee&rsaquo;  滚动文本</p>
+<p>  &lt;ul&rsaquo;…&lt;/ul&rsaquo;  无序列表</p>
+<p>  &lt;ol&rsaquo;…&lt;/ol&rsaquo;  有序列表</p>
+<p>  &lt;dl&rsaquo;…&lt;/dl&rsaquo;  定义列表</p>
+<p>  &lt;table&rsaquo;…&lt;/table&rsaquo;  表格</p>
+<p>  &lt;form&rsaquo;…&lt;/form&rsaquo;  表单</p>
+<p>  &lt;div&rsaquo;…&lt;/div&rsaquo;</p>
+<p>行内元素：行内大多为描述性标记</p>
+<p>  &lt;span&rsaquo;…&lt;/span&rsaquo;</p>
+<p>  &lt;a&rsaquo;…&lt;/a&rsaquo;  链接</p>
+<p>  &lt;br&rsaquo;  换行</p>
+<p>  &lt;b&rsaquo;…&lt;/b&rsaquo;  加粗</p>
+<p>  &lt;strong&rsaquo;…&lt;/strong&rsaquo;  加粗</p>
+<p>  &lt;img &rsaquo;  图片</p>
+<p>  &lt;sup&rsaquo;…&lt;/sup&rsaquo;  上标</p>
+<p>  &lt;sub&rsaquo;…&lt;/sub&rsaquo;  下标</p>
+<p>  &lt;i&rsaquo;…&lt;/i&rsaquo;  斜体</p>
+<p>  &lt;em&rsaquo;…&lt;/em&rsaquo;  斜体</p>
+<p>  &lt;del&rsaquo;…&lt;/del&rsaquo;  删除线</p>
+<p>  &lt;u&rsaquo;…&lt;/u&rsaquo;  下划线</p>
+<p>  &lt;input&rsaquo;…&lt;/input&rsaquo;  文本框</p>
+<p>  &lt;textarea&rsaquo;…&lt;/textarea&rsaquo;  多行文本</p>
+<p>  &lt;select&rsaquo;…&lt;/select&rsaquo;  下拉列表</p>
+<p>·块级元素</p>
+<ol>
+<li>  总是从新的一行开始</li>
+
+  <li>高度、宽度都是可控的</li>
+
+  <li>宽度没有设置时，默认为100%</li>
+
+<li>  块级元素中可以包含块级元素和行内元素</li>
+</ol>
+·行内元素
+<ol>
+  <li>和其他元素都在一行</li>
+
+  <li>高度、宽度以及内边距都是不可控的</li>
+
+ <li> 宽高就是内容的高度，不可以改变</li>
+
+ <li> 行内元素只能行内元素，不能包含块级元素</li>
+  </ol>
+  就是这样！
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>

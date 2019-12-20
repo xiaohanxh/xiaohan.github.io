@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>linuxDeploy - 萧寒</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="准备
+手机需要root！
+手机需要root！
+手机需要root！
+重要的事情说三遍
+工作
+将下列软件安装在手机上：
+
+Linux deploy Linux系统支撑软件
+Busy Box Linux ,"> 
+    <meta name="author" content="萧寒"> 
+    <link rel="alternative" href="atom.xml" title="萧寒" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 4.1.1"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">萧寒</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="https://xiaohanxh.github.io"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">linuxDeploy</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">linuxDeploy</h1>
+        <div class="stuff">
+            <span>十一月 23, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h5>准备</h5>
+<h6>手机需要root！</h6>
+<h6>手机需要root！</h6>
+<h6>手机需要root！</h6>
+<strong>重要的事情说三遍</strong>
+<h5>工作<h5>
+<h6><strong>将</strong>下列软件安装在手机上：</h6>
+
+<p><a href="https://github.com/meefik/linuxdeploy/releases" target="_blank" rel="noopener">Linux deploy</a> Linux系统支撑软件</p>
+<p><a href="https://github.com/meefik/busybox/releases" target="_blank" rel="noopener">Busy Box</a> Linux deploy支撑软件</p>
+<p><a href="https://github.com/connectbot/connectbot/releases" target="_blank" rel="noopener">ConnectBox</a> 手机端SSH连接软件</p>
+<p>BusyBox<br>安装完毕后，运行：</p>
+<p>点击安装，等待程序自行运行，在界面中输出## END后退出程序。未安装前是不会有Busy Box的版本信息的，无须在意到时候界面中少了内容。</p>
+<p> Busy Box默认界面语言是英文，可以改成中文，点击右上角部分，在弹出的菜单中选择Settings，接着进入设置界面，找到Language项，点击后选择简体中文，退出设置界面后界面语言就改为中文了。</p>
+<p>在设置界面中还可以设置其他参数，如果更改系统安装路径，需要记住修改后的路径，后续步骤需要使用。</p>
+<p>Linux deploy<br>运行完毕Busy Box的部分后，运行Linux deploy。</p>
+<p>点击左图左上角部分，选择设置</p>
+<p>在设置界面中找到PATH变量，赋予其值 /system/xbin</p>
+<p>注意这是Busy Box的安装路径，如果前面在Busy Box有修改默认安装路径的话，就要填写修改后的路径。</p>
+<p>设置界面其余部分看个人喜好设置，建议开启锁定Wifi功能。防止WiFi断引起一系列不必要的麻烦！</p>
+<p>接着退回主界面，点击左图右下角部分。</p>
+<p>点击后看到如上界面，对Linux系统安装信息进行配置。</p>
+<p>发行版看个人喜好选择，但需要注意发行版与手机之间可能会有兼容问题，本机中选择的是Ubuntu发行版。<br>架构需要根据手机硬件选择，一般会默认选择好匹配的选项，所以建议默认选项。<br>源地址是指Linux系统文件下载源的网络地址，默认是发行版的国外官方源，网速堪忧，建议换上国内源，本人比较喜欢阿里云的源，没有为什么！就是喜欢！</p>
+<p>安装路径是Linux系统的安装路径，如要安装在手机自带的存储空间中，则在路径开头加上${ENV_DIR}，这代表的是存储空间根目录。如要安装在sdcard中，则加上${EXTERNAL_STORAGE}。<br>文件系统推荐ext4，但保留默认也可以。<br>用户名和密码自定义，本地、远程连接该系统用。<br>DNS如需自定义就自行输入，否则保留默认</p>
+<p>本地化即设置系统语言，简体中文选择zh_CN.UTF-8<br>挂载功能可让Linux系统访问手机上的文件<br>挂载列表中添加访问手机内容的目录，/sdcard:sdcard为手机自带存储空间根目录，/storage/sdcard1为sd卡根目录。</p>
+<p>按需开启SSH和图形界面功能</p>
+<p>退出系统设置界面，点击主界面右上角，选择安装。</p>
+<p>等待程序自行安装Linux系统，时间不定，看到<br>&lt;&lt;&lt;deploy则安装完毕。如果中间没有报错则安装成功。</p>
+<p>注意：安装完毕后要先点击停止按钮，再按启动按钮</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>

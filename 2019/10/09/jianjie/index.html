@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>如何快速简单的建立一个博客！ - 萧寒</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="
+
+
+最近几天我学习了如何搭建一个博客，下面将经验分享一下！一.所需工具①node.js②git③hexo以及Sublime Text 3
+二.应用工具的安装建议去官网下载所需要的工具，如果官网数据,"> 
+    <meta name="author" content="萧寒"> 
+    <link rel="alternative" href="atom.xml" title="萧寒" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 4.1.1"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">萧寒</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="https://xiaohanxh.github.io"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">如何快速简单的建立一个博客！</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">如何快速简单的建立一个博客！</h1>
+        <div class="stuff">
+            <span>十月 09, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <img id="imgzoom_zoom" w="500" h="210" src="http://intwk.com/web/IPmster/" width="500" height="210">
+
+
+<h5 id="最近几天我学习了如何搭建一个博客，下面将经验分享一下！"><a href="#最近几天我学习了如何搭建一个博客，下面将经验分享一下！" class="headerlink" title="最近几天我学习了如何搭建一个博客，下面将经验分享一下！"></a>最近几天我学习了如何搭建一个博客，下面将经验分享一下！</h5><h4 id="一-所需工具"><a href="#一-所需工具" class="headerlink" title="一.所需工具"></a>一.所需工具</h4><p>①node.js<br>②git<br>③hexo<br>以及Sublime Text 3</p>
+<h4 id="二-应用工具的安装"><a href="#二-应用工具的安装" class="headerlink" title="二.应用工具的安装"></a>二.应用工具的安装</h4><p>建议去官网下载所需要的工具，如果官网数据下载比较慢，可以考虑镜像和第三方网站（注意安全！）</p>
+<h4 id="下面是官网链接"><a href="#下面是官网链接" class="headerlink" title="下面是官网链接"></a>下面是官网链接</h4><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a><br><a href="https://git-scm.com/" target="_blank" rel="noopener">git</a><br><a href="http://www.sublimetext.com/3" target="_blank" rel="noopener">Sublime Text 3</a><br>     建议安装正式版程序！<br>     安装完成后可以通过win+r，输入cmd回车，输入node -v和npm -v来查看版本号！<br>      安装Git和配置好Git环境，安装成功的象征就是在电脑上任何位置鼠标右键能够出现如下两个选择<br><img src="1.png" alt=""><br>    注意：一般出于安全考虑，只有在Git Bash Here中才能进行Git的相关操作。如果需要在cmd命令行里调用Git，那么就要配置电脑的环境变量Path，或者在安装的时候选择use Git from the Windows Command Prompt。这个可有可无，影响不大，成功配置的界面如图<br><img src="2.png" alt=""></p>
+<h5 id="接下来是hexo的安装和配置"><a href="#接下来是hexo的安装和配置" class="headerlink" title="接下来是hexo的安装和配置"></a>接下来是hexo的安装和配置</h5><p>   建议在自己认为比较合适的地方安装，以及博客目录需要和hexo在同一目录（就是说要在博客文件夹使用hexo的话hexo必须安装在博客文件夹或者/.这样子），我建议在D盘新建一个文件夹用来做博客的库比较好！<br>   然后cd进入文件夹安装hexo<br><img src="3.png" alt=""><br>   输入npm install hexo -g，开始安装Hexo<br><img src="4.png" alt=""><br>   输入hexo -v，检查hexo的版本号！<br><img src="5.png" alt=""><br>   输入hexo init，初始化博客文件夹，为了容易辨认，可以输入hexo init ＋博客名，自动创建用户名的文件夹！<br><img src="6.png" alt=""><br><img src="7.png" alt=""><br>   ok!这样子准备工作完成第一步了！<br>   输入npm install，安装所需要的组件<br><img src="8.png" alt=""><br>    输入hexo g<br><img src="9.png" alt=""><br>    输入hexo s，开启本地服务器,打开浏览器，输入网址,欣赏本地网页吧！<br><img src="10.png" alt=""></p>
+<h5 id="如果无法成功hexo-s，那么可能端口被占用了。此时我们ctrl-c停止服务器，接着输入“hexo-server-p-端口号”来改变端口！"><a href="#如果无法成功hexo-s，那么可能端口被占用了。此时我们ctrl-c停止服务器，接着输入“hexo-server-p-端口号”来改变端口！" class="headerlink" title="如果无法成功hexo s，那么可能端口被占用了。此时我们ctrl+c停止服务器，接着输入“hexo server -p 端口号”来改变端口！"></a>如果无法成功hexo s，那么可能端口被占用了。此时我们ctrl+c停止服务器，接着输入“hexo server -p 端口号”来改变端口！</h5><p><img src="11.png" alt=""><br>刚开始生成的服务器：<br><img src="12.png" alt=""></p>
+<h5 id="hexo的安装以及配置完成！"><a href="#hexo的安装以及配置完成！" class="headerlink" title="hexo的安装以及配置完成！"></a>hexo的安装以及配置完成！</h5><h4 id="三-github的注册和新库的建立！"><a href="#三-github的注册和新库的建立！" class="headerlink" title="三.github的注册和新库的建立！"></a>三.github的注册和新库的建立！</h4><h5 id="1-注册："><a href="#1-注册：" class="headerlink" title="1.注册："></a>1.注册：</h5><p>在<a href="https://www.baidu.com/link?url=Pfiy7IC0s3joKkLUXlhmA4WU2AZhm_Lk3Z-p-gvWC-_&wd=&eqid=e7a907a90062bc2b000000035d9c9a8d" target="_blank" rel="noopener">GitHub官网</a> 注册账号，很简单的！<br><img src="13.png" alt=""><br>Create account<br>注册过程可能需要验证你的邮箱，其他就不在赘述。</p>
+<h6 id="2-创建仓库："><a href="#2-创建仓库：" class="headerlink" title="2.创建仓库："></a>2.创建仓库：</h6><pre><code>然后需要创建一个仓库(repository) 来存储我们的网站，点击首页任意位置出现的 New repository按钮创建仓库, Respository name 中的username.github.io 的username 一定与前面的Owner 一致，记住你的username下面会用到。</code></pre><h6 id="需要勾选Initialize-this-repository-with-a-README！"><a href="#需要勾选Initialize-this-repository-with-a-README！" class="headerlink" title="需要勾选Initialize this repository with a README！"></a>需要勾选Initialize this repository with a README！</h6><p><img src="14.png" alt=""><br>Create reponsitory<br>这样就完成了，得到了空间！<br>这样你就获得了一个hithub网址 你的库名：username.github.io,现在就可以进行访问了！<br>进入库，大佬可以开始你的表演了，能力强直接写源代码也不是不可以！红红火火恍恍惚惚！</p>
+<h4 id="Sublime-Text-3配置hexo博客文件！"><a href="#Sublime-Text-3配置hexo博客文件！" class="headerlink" title="Sublime Text 3配置hexo博客文件！"></a>Sublime Text 3配置hexo博客文件！</h4><p>打开Sublime Text 3直接将博客目录拉到软件窗口内！在其文件夹中，找到_config.yml文件，修改repo值！<br>！<a href="15.png"></a><br>repo值是你在github项目里的ssh(图片右边)<br><img src="16.png" alt=""><br>以及将url（第十六行）后面改为url: <a href="https://xiaohanxh.github.io！" target="_blank" rel="noopener">https://xiaohanxh.github.io！</a><br>文件里面题目（title）和作者都可以更改！</p>
+<h4 id="四-hexo上传"><a href="#四-hexo上传" class="headerlink" title="四.hexo上传"></a>四.hexo上传</h4><h6 id="1-ssh配置"><a href="#1-ssh配置" class="headerlink" title="1.ssh配置"></a>1.ssh配置</h6><p>在git或者命令指示符中输入ssh-keygen -t rsa -C “<a href="mailto:xxxxx@xx.com">xxxxx@xx.com</a>”，连续三个回车，生成密钥，最后得到了两个文件：id_rsa和id_rsa.pub（默认存储路径是：C:\Users\Administrator.ssh）。<br><img src="17.png" alt=""><br>我们不需要密码（才不是记不住呢！！！！）<br>打开.ssh目录下的id_rsa，复制其中内容，登录Github，点击头像下的settings，添加ssh。<br>[](18.png）<br>新建一个new ssh key，将id_rsa.pub文件里的内容复制上去<br><a href="19.png"></a><br>确认，完成！</p>
+<h6 id="2-hexo-d"><a href="#2-hexo-d" class="headerlink" title="2.hexo d"></a>2.hexo d</h6><p>在git或者命令指示符中输入hexo d，会弹出对话框输入账号密码，开始上传！</p>
+<h6 id="在生成以及部署文章之前，需要安装一个扩展：npm-install-hexo-deployer-git-–save"><a href="#在生成以及部署文章之前，需要安装一个扩展：npm-install-hexo-deployer-git-–save" class="headerlink" title="在生成以及部署文章之前，需要安装一个扩展：npm install hexo-deployer-git –save"></a>在生成以及部署文章之前，需要安装一个扩展：npm install hexo-deployer-git –save</h6><p><a href="20.png"></a><br>完成后打开你的网页(http://用户名.github.io)试试吧！没错！成功了！</p>
+<h5 id="然后是博客的配置"><a href="#然后是博客的配置" class="headerlink" title="然后是博客的配置"></a>然后是博客的配置</h5><p>主题安装<br> 为了使博客不太难看，我们需要安装一个主题，切换至刚刚生成的Hexo 目录，安装主题<br>$ cd username.github.io<br> $ git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next<br>这里选了一个极简的主题，也是Hexo众多主题中最受欢迎的一个。Hexo theme也有更多主题供你选择。<br>主题配置：<br> 主题配置文件在username.github.io/themes/next/_config.yml中修改。</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
